@@ -74,4 +74,14 @@ class Proffix_Taxonomy_Admin {
 		 */
 		wp_enqueue_script( $this->Proffix_Taxonomy, plugin_dir_url( __FILE__ ) . 'js/proffix-taxonomy-admin.js', array( 'jquery' ), $this->version, false );
 	}
+
+
+	public function add_admin_menu() {
+		add_menu_page( __( 'PROFFIX Taxonomy', 'proffix'), __( 'PROFFIX', 'proffix'), 'manage_options', PROFFIX_TAXONOMY_PREFIX . 'general', array($this, 'general_page_template'));
+		add_submenu_page( PROFFIX_TAXONOMY_PREFIX . 'general', __( 'General', 'proffix'), __( 'General', 'proffix'), 'manage_options', PROFFIX_TAXONOMY_PREFIX . 'general');
+	}
+
+	public function general_page_template() {
+		include PLUGIN_PATH . "admin/partials/proffix-taxonomy-admin-display.php";
+	}
 }
