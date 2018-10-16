@@ -2,6 +2,7 @@
 /*
 Plugin Name: PROFFIX Taxonomy Plugin
 Plugin URI: https://github.com/Modeso/proffix-taxonomy-plugin/
+GitHub Plugin URI: https://github.com/Modeso/proffix-taxonomy-plugin/
 Description: Add PROFFIX Fields as Taxonomy for better filtering.
 Version: 1.0.0
 Author: Modeso
