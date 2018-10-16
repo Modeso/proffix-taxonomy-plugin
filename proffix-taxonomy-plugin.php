@@ -21,7 +21,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'Proffix_Taxonomy_VERSION', '1.0.0' );
-define('PROFFIX_TAXONOMY_PREFIX', 'mo_proffix_taxonomy');
+define('PROFFIX_TAXONOMY_PREFIX', 'mo_proffix_taxonomy_');
 
 /**
  * The code that runs during plugin activation.

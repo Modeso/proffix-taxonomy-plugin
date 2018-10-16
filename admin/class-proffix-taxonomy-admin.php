@@ -82,6 +82,6 @@ class Proffix_Taxonomy_Admin {
 	}
 
 	public function general_page_template() {
-		include plugin_dir_url( __FILE__ ) . "partials/proffix-taxonomy-admin-display.php";
+		include plugin_dir_path( __FILE__ ). "partials/proffix-taxonomy-admin-display.php";
 	}
 }
