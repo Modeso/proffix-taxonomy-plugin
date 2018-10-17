@@ -84,4 +84,8 @@ class Proffix_Taxonomy_Admin {
 	public function general_page_template() {
 		include plugin_dir_path( __FILE__ ). "partials/proffix-taxonomy-admin-display.php";
 	}
+
+	function register_settings() {
+		register_setting( PROFFIX_TAXONOMY_PREFIX . 'general_settings_group', PROFFIX_TAXONOMY_PREFIX . 'fields_for_taxonomy' );
+	}
 }
